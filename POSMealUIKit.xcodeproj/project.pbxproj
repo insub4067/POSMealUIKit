@@ -10,9 +10,9 @@
 		C6145A772933684100BC29EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145A762933684100BC29EE /* AppDelegate.swift */; };
 		C6145A792933684100BC29EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145A782933684100BC29EE /* SceneDelegate.swift */; };
 		C6145A7B2933684100BC29EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145A7A2933684100BC29EE /* ViewController.swift */; };
-		C6145A7E2933684100BC29EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6145A7C2933684100BC29EE /* Main.storyboard */; };
 		C6145A802933684200BC29EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6145A7F2933684200BC29EE /* Assets.xcassets */; };
 		C6145A832933684200BC29EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6145A812933684200BC29EE /* LaunchScreen.storyboard */; };
+		C6145A8D2933699E00BC29EE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6145A8C2933699E00BC29EE /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		C6145A762933684100BC29EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6145A782933684100BC29EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C6145A7A2933684100BC29EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C6145A7D2933684100BC29EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6145A7F2933684200BC29EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6145A822933684200BC29EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6145A842933684200BC29EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6145A8C2933699E00BC29EE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		C6145A752933684100BC29EE /* POSMealUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				C6145A762933684100BC29EE /* AppDelegate.swift */,
-				C6145A782933684100BC29EE /* SceneDelegate.swift */,
-				C6145A7A2933684100BC29EE /* ViewController.swift */,
-				C6145A7C2933684100BC29EE /* Main.storyboard */,
-				C6145A7F2933684200BC29EE /* Assets.xcassets */,
-				C6145A812933684200BC29EE /* LaunchScreen.storyboard */,
+				C6145A8B2933698A00BC29EE /* Controller */,
+				C6145A8A2933697800BC29EE /* Support */,
 				C6145A842933684200BC29EE /* Info.plist */,
 			);
 			path = POSMealUIKit;
+			sourceTree = "<group>";
+		};
+		C6145A8A2933697800BC29EE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C6145A762933684100BC29EE /* AppDelegate.swift */,
+				C6145A782933684100BC29EE /* SceneDelegate.swift */,
+				C6145A7A2933684100BC29EE /* ViewController.swift */,
+				C6145A7F2933684200BC29EE /* Assets.xcassets */,
+				C6145A812933684200BC29EE /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C6145A8B2933698A00BC29EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6145A8C2933699E00BC29EE /* TabBarController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +143,6 @@
 			files = (
 				C6145A832933684200BC29EE /* LaunchScreen.storyboard in Resources */,
 				C6145A802933684200BC29EE /* Assets.xcassets in Resources */,
-				C6145A7E2933684100BC29EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6145A7B2933684100BC29EE /* ViewController.swift in Sources */,
+				C6145A8D2933699E00BC29EE /* TabBarController.swift in Sources */,
 				C6145A772933684100BC29EE /* AppDelegate.swift in Sources */,
 				C6145A792933684100BC29EE /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C6145A7C2933684100BC29EE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6145A7D2933684100BC29EE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C6145A812933684200BC29EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +300,7 @@
 				INFOPLIST_FILE = POSMealUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +308,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kim.POSMealUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +329,7 @@
 				INFOPLIST_FILE = POSMealUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kim.POSMealUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
